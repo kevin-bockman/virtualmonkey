@@ -1,5 +1,6 @@
 {
-		"PRIVATE_SSH_KEY":"key:publish-test:1"
+		"PRIVATE_SSH_KEY":"key:publish-test:1",
+                "rs_utils/firewall/enabled":"text:true"
 }
 
 

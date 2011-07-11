@@ -1,0 +1,10 @@
+{
+
+  "server_template_ids":[
+    "119330"
+  ],
+  "feature":"base_iptables.rb",
+  "cloud_variables":"all_clouds.json",
+  "prefix":"TROOP-chef-base",
+  "common_inputs":"base.json"
+}
