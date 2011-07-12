@@ -17,12 +17,12 @@ test "default" do
 end
 
 test "iptables_any_ip" do
-  @runner.test_firewall_rule_port(@port)
-  @runner.test_firewall_rule_ip_port("0.0.0.0", "1")
+  @runner.test_firewall_rule("any", @port)
+  @runner.test_firewall_rule("0.0.0.0", @port)
 end
 
 test "iptables_specific_ip" do
-  @runner.test_firewall_rule_ip_port("1.2.3.4", "1")
+  @runner.test_firewall_rule("1.2.3.4", @port)
 end
 
 test "iptables_enable" do

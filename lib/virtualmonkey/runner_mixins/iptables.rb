@@ -3,10 +3,11 @@ module VirtualMonkey
     module Iptables
 
       def check_iptables_rules(port, ip = "0.0.0.0")
+        ip = "0.0.0.0" if ip == "any"
         s_one.spot_check_command("iptables --list FWR --numeric | grep -E '#{ip}.* dpt:#{port} '")
       end
 
-      def test_firewall_rule_ip_port(ip, port)
+      def test_firewall_rule(ip, port)
         #ip = "1.2.3.5"
         #port = "1"
 

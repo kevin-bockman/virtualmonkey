@@ -1,7 +1,7 @@
 {
 
   "server_template_ids":[
-    "119330"
+    "104181"
   ],
   "feature":"base_iptables.rb",
   "cloud_variables":"all_clouds.json",
